@@ -13,7 +13,7 @@ struct ContentView: View {
             Color.theme.background
                 .ignoresSafeArea()
             
-            VStack {
+            VStack (spacing: 40){
                 Text("Accent Color")
                     .foregroundColor(Color.theme.accent)
                 
@@ -26,15 +26,9 @@ struct ContentView: View {
                 Text("Green Color")
                     .foregroundColor(Color.theme.green)
             }
-            .padding()
+            .font(.headline)
         }
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        
     }
 }
 
